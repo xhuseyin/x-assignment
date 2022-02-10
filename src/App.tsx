@@ -1,11 +1,10 @@
 import './App.css';
-import CardButton from './components/ProductButton';
-import SquareCheckbox from './components/SquareCheckbox';
-import CategoryButton from './components/CategoryButton';
+import Header from './containers/Header';
+
 
 const App = () => (
 <>
-<CategoryButton>mug</CategoryButton>
+<Header></Header>
 </>
 );
 
