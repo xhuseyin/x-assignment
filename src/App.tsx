@@ -6,6 +6,7 @@ import { Row, Col } from "antd";
 import SortingSection from './containers/SortingSection';
 import BrandSection from './containers/BrandSection';
 import TagSection from './containers/TagSection';
+import Product from './containers/Product';
 
 const App = () => (
 <Layout>
@@ -17,8 +18,10 @@ const App = () => (
           <BrandSection/>
           <TagSection/>
       </Col>
-      <Col span={12} style={{border:'solid 1px blue'}}></Col>
-      <Col span={6} style={{border:'solid 1px green'}}></Col>
+      <Col span={12}>
+       <Product/>        
+      </Col>
+      <Col span={6}></Col>
       </Row>
     </Content>
 </Layout>
