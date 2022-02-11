@@ -7,6 +7,8 @@ import SortingSection from './containers/SortingSection';
 import BrandSection from './containers/BrandSection';
 import TagSection from './containers/TagSection';
 import Product from './containers/Product';
+import Footer from './components/Footer';
+import Basket from './containers/Basket';
 
 const App = () => (
 <Layout>
@@ -21,9 +23,12 @@ const App = () => (
       <Col span={12}>
        <Product/>        
       </Col>
-      <Col span={6}></Col>
+      <Col span={6}>
+        <Basket/>
+      </Col>
       </Row>
     </Content>
+    <Footer/>
 </Layout>
 );
 
