@@ -13,7 +13,7 @@ const ListItem = styled(Row)`
   }
 `;
 
-const Sorting = () => {
+const SortingSection = () => {
   return (
     <>
       <SectionTitle title={"Sorting"} />
@@ -39,4 +39,4 @@ const Sorting = () => {
   );
 };
 
-export default Sorting;
+export default SortingSection;
