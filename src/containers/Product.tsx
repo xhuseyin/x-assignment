@@ -71,7 +71,7 @@ const Product = () => (
     </Col>
     <Col span={24}>
     <ProductsWrapper gutter={[24, { xs: 4, sm: 8, md: 16, lg: 20 }]}>       
-           <ProductCard span={6}>
+           <ProductCard md={12} lg={8} xl={6}>
            <ProductImageWrapper>
            <Image src="https://fakeimg.pl/368/" alt={''}/>                
            </ProductImageWrapper>
@@ -83,7 +83,7 @@ const Product = () => (
             </ProductName>
             <AddToBasketButton>Add</AddToBasketButton>
            </ProductCard>
-           <ProductCard span={6}>
+           <ProductCard md={12} lg={8} xl={6}>
            <ProductImageWrapper>
            <Image src="https://fakeimg.pl/368/" alt={''}/>                
            </ProductImageWrapper>
@@ -95,7 +95,7 @@ const Product = () => (
             </ProductName>
             <AddToBasketButton>Add</AddToBasketButton>
            </ProductCard>
-           <ProductCard span={6}>
+           <ProductCard md={12} lg={8} xl={6}>
            <ProductImageWrapper>
            <Image src="https://fakeimg.pl/368/" alt={''}/>                
            </ProductImageWrapper>
@@ -107,7 +107,7 @@ const Product = () => (
             </ProductName>
             <AddToBasketButton>Add</AddToBasketButton>
            </ProductCard>
-           <ProductCard span={6}>
+           <ProductCard md={12} lg={8} xl={6}>
            <ProductImageWrapper>
            <Image src="https://fakeimg.pl/368/" alt={''}/>                
            </ProductImageWrapper>
@@ -119,7 +119,7 @@ const Product = () => (
             </ProductName>
             <AddToBasketButton>Add</AddToBasketButton>
            </ProductCard>
-           <ProductCard span={6}>
+           <ProductCard md={12} lg={8} xl={6}>
            <ProductImageWrapper>
            <Image src="https://fakeimg.pl/368/" alt={''}/>                
            </ProductImageWrapper>

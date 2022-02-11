@@ -80,7 +80,7 @@ const Basket = () => {
           </ProductPrice>
         </Col>  
         <Col span={8}>          
-          <BadgeWrapper>       
+          <BadgeWrapper justify="end">       
           <PlusMinusButton>
           <img src={MinusIcon} alt="" />
           </PlusMinusButton>          
@@ -102,7 +102,7 @@ const Basket = () => {
           </ProductPrice>
         </Col>  
         <Col span={8}>          
-          <BadgeWrapper>       
+          <BadgeWrapper justify="end">       
           <PlusMinusButton>
           <img src={MinusIcon} alt="" />
           </PlusMinusButton>          
@@ -124,7 +124,7 @@ const Basket = () => {
           </ProductPrice>
         </Col>  
         <Col span={8}>          
-          <BadgeWrapper>       
+          <BadgeWrapper justify="end">       
           <PlusMinusButton>
           <img src={MinusIcon} alt="" />
           </PlusMinusButton>          

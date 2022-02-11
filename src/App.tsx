@@ -14,16 +14,16 @@ const App = () => (
 <Layout>
 <Header/>
 <Content>
-      <Row>
-      <Col span={6}>
+      <Row gutter={16}>
+      <Col sm={12} md={12} lg={8} xl={6}>
           <SortingSection/>
           <BrandSection/>
           <TagSection/>
       </Col>
-      <Col span={12}>
+      <Col sm={12} md={12} lg={16} xl={12}>
        <Product/>        
       </Col>
-      <Col span={6}>
+      <Col sm={12} md={12} lg={24} xl={6}>
         <Basket/>
       </Col>
       </Row>
