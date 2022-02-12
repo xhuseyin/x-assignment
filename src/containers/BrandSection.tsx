@@ -37,7 +37,6 @@ const ListItem = styled(Row)`
 `;
 
 const BrandSection = () => {
-
   const [searchText, setSearchText] = useState("");
   const dispatch = useDispatch();
   const { pending, brands, error } = useSelector(

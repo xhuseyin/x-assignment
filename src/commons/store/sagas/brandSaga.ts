@@ -4,7 +4,7 @@ import {
   fetchBrandsFailure,
   fetchBrandsSuccess
 } from "../actions/brandActions";
-import { postTypes } from "../actionTypes/postsTypes";
+import { brandActionTypes } from "../actionTypes/brandActionTypes";
 
 const getBrands = () =>
   axios.get<string[]>("https://getir-locals-api.herokuapp.com/brands");
@@ -27,7 +27,7 @@ function* fetchBrandsSaga(): any {
 }
 
 function* brandSaga() {
-  yield all([takeLatest(postTypes.FETCH_POST_REQUEST, fetchBrandsSaga)]);
+  yield all([takeLatest(brandActionTypes.FETCH_BRAND_REQUEST, fetchBrandsSaga)]);
 }
 
 export default brandSaga;
