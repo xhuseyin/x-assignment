@@ -10,12 +10,24 @@ import { fetchTagsRequest } from "../commons/store/actions/tagActions";
 import { RootState } from "../commons/store/reducers/rootReducer";
 
 const Container = styled.div`
-  margin-top: 12px;
-  margin-bottom: 24px;
-  padding: 24px;
+  // margin-top: 12px;
+  // margin-bottom: 24px;
+  // padding: 24px;
+  // width: 100%;
+  // background-color: #ffffff;
+  // border-radius: 2px;
   width: 100%;
-  background-color: #ffffff;
-  border-radius: 2px;
+  padding: 0 3px;
+  max-height: 148px;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+  &::-webkit-scrollbar-thumb {  
+    border-radius: 4px;
+    background: #e0e0e0;
+  }
 `;
 
 const ListItem = styled(Row)`
