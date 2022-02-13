@@ -9,15 +9,15 @@ API_URL : [https://getir-fake-api.herokuapp.com/](https://getir-fake-api.herokua
 
 ## Folder Structure 
 
-├── assets/icons        # SVG files
-├── models              # Interfaces    
-├── actions             # Source of information for the store
-├── actionTypes         # Enum for action types
-├── reducers            # Used to manage state in the application
-├── sagas               # Used to do side effects
-├── types               # Action Types
-├── components          # Only for a Container guide
-├── container           # Containers are responsible for more stuff than presentational components
+├── assets/icons        # SVG files<br>
+├── models              # Interfaces<br>   
+├── actions             # Source of information for the store<br>
+├── actionTypes         # Enum for action types<br>
+├── reducers            # Used to manage state in the application<br>
+├── sagas               # Used to do side effects<br>
+├── types               # Action Types<br>
+├── components          # Only for a Container guide<br>
+├── container           # Containers are responsible for more stuff than presentational components<br>
 
 ## Tech Stack
 
