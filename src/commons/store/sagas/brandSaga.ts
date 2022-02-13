@@ -5,9 +5,10 @@ import {
   fetchBrandsSuccess
 } from "../actions/brandActions";
 import { brandActionTypes } from "../actionTypes/brandActionTypes";
+import API_URL from '../../utilities/API_URL';
 
 const getBrands = () =>
-  axios.get<string[]>("https://getir-locals-api.herokuapp.com/brands");
+  axios.get<string[]>( API_URL + "brands");
 
 function* fetchBrandsSaga(): any {
   try {

@@ -55,9 +55,9 @@ const TagSection = () => {
 }, []);
 
  const handleFilter = (item: string) => {
-   console.log('item:...',item);
-    dispatch(filterPostsRequest(item));
-}; 
+    const queryStr = '?tags=' + item; 
+    dispatch(filterPostsRequest(queryStr));
+};  
 
   return (
     <>

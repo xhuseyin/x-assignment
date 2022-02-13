@@ -8,9 +8,10 @@ import {
   filterPostsSuccess
 } from "../actions/postsActions";
 import { postTypes } from "../actionTypes/postsTypes";
+import API_URL from '../../utilities/API_URL';
 
 const getPosts = () =>
-  axios.get<IPost[]>("https://getir-locals-api.herokuapp.com/products");
+  axios.get<IPost[]>(API_URL + "products");
 
 function* fetchPostsSaga(): any {
   try {

@@ -55,9 +55,9 @@ const BrandSection = () => {
   }, []);
 
   const handleFilter = (item: string) => {
-      
-     dispatch(filterPostsRequest(item));
- }; 
+    const queryStr = '?manufacturer=' + item; 
+    dispatch(filterPostsRequest(queryStr));
+};  
 
     return (
         <>

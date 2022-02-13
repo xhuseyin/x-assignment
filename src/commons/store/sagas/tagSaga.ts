@@ -5,9 +5,10 @@ import {
   fetchTagsSuccess
 } from "../actions/tagActions";
 import { tagActionTypes } from "../actionTypes/tagActionTypes";
+import API_URL from '../../utilities/API_URL';
 
 const getTags = () =>
-  axios.get<string[]>("https://getir-locals-api.herokuapp.com/tags");
+  axios.get<string[]>(API_URL + "tags");
 
 function* fetchTagsSaga(): any {
   try {

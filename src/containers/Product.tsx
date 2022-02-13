@@ -5,6 +5,7 @@ import CategoryButton from "../components/CategoryButton";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchPostsRequest } from "../commons/store/actions/postsActions";
 import { RootState } from "../commons/store/reducers/rootReducer";
+import { filterPostsRequest } from "../commons/store/actions/postsActions";
 
 const Container = styled(Col)`
   width: 100%;
@@ -74,9 +75,14 @@ const Product = () => {
         (state: RootState) => state.posts
     );
 
-    // useEffect(() => {
-    //     dispatch(fetchPostsRequest());
-    // }, []);
+    useEffect(() => {
+        dispatch(fetchPostsRequest());
+    }, []);
+
+    const handleFilter = (item: string) => {
+        const queryStr = '?itemType=' + item; 
+        dispatch(filterPostsRequest(queryStr));
+    };  
 
     return (
         <Container>
@@ -84,10 +90,10 @@ const Product = () => {
                 <Title>Products</Title>
             </Col>
             <Col span={24}>
-                <CategoryButton>
+                <CategoryButton onClick={() => handleFilter('mug')}>
                     mug
                 </CategoryButton>
-                <CategoryButton>
+                <CategoryButton onClick={() => handleFilter('shirt')}>
                     shirt
                 </CategoryButton>
             </Col>
