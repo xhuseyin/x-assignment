@@ -10,7 +10,7 @@ API_URL : [https://getir-fake-api.herokuapp.com/](https://getir-fake-api.herokua
 ## Folder Structure 
 
 ├── assets/icons        # SVG files<br>
-├── models              # Interfaces<br>   
+├── models              # Interfaces  
 ├── actions             # Source of information for the store<br>
 ├── actionTypes         # Enum for action types<br>
 ├── reducers            # Used to manage state in the application<br>
