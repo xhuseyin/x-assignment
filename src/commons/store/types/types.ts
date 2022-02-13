@@ -29,7 +29,33 @@ export type FetchPostsFailure = {
   payload: FetchPostsFailurePayload;
 };
 
+export interface FilterPostsSuccessPayload {
+  posts: IPost[];
+}
+
+export interface FilterPostsFailurePayload {
+  error: string;
+}
+
+export interface FilterPostsRequest {
+  type: typeof postTypes.FILTER_POST_REQUEST;
+  payload: string;
+}
+
+export type FilterPostsSuccess = {
+  type: typeof postTypes.FILTER_POST_SUCCESS;
+  payload: FilterPostsSuccessPayload;
+};
+
+export type FilterPostsFailure = {
+  type: typeof postTypes.FILTER_POST_FAILURE;
+  payload: FilterPostsFailurePayload;
+};
+
 export type PostsActions =
   | FetchPostsRequest
   | FetchPostsSuccess
-  | FetchPostsFailure;
+  | FetchPostsFailure
+  | FilterPostsRequest
+  | FilterPostsSuccess
+  | FilterPostsFailure;

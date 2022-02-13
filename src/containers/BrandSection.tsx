@@ -8,6 +8,7 @@ import SquareCheckbox from "../components/SquareCheckbox";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchBrandsRequest } from "../commons/store/actions/brandActions";
 import { RootState } from "../commons/store/reducers/rootReducer";
+import { filterPostsRequest } from "../commons/store/actions/postsActions";
 
 const Container = styled.div`
 width: 100%;
@@ -53,6 +54,11 @@ const BrandSection = () => {
       dispatch(fetchBrandsRequest());
   }, []);
 
+  const handleFilter = (item: string) => {
+      
+     dispatch(filterPostsRequest(item));
+ }; 
+
     return (
         <>
             <SectionTitle title={"Brands"} />
@@ -74,7 +80,7 @@ const BrandSection = () => {
                           (item) => item.toUpperCase().indexOf(searchText.toUpperCase()) > -1
                         )
                         .map((item, index) => (
-                    <ListItem key={index}>
+                    <ListItem key={index} onClick={() => handleFilter(item)}>
                         <SquareCheckbox />
                         <span>
                         { item } <span></span>

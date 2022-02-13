@@ -26,7 +26,10 @@ padding: 20px 9px;
 margin-top: 16px;
 `;
 
-const ProductCard = styled(Col)``;
+const ProductCard = styled(Col)`
+ margin-left: 0;
+ margin-right: 0;
+`;
 
 const ProductImageWrapper = styled.div`
   border: 1.17666px solid #F3F0FE;
@@ -71,9 +74,9 @@ const Product = () => {
         (state: RootState) => state.posts
     );
 
-    useEffect(() => {
-        dispatch(fetchPostsRequest());
-    }, []);
+    // useEffect(() => {
+    //     dispatch(fetchPostsRequest());
+    // }, []);
 
     return (
         <Container>

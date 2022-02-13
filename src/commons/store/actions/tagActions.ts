@@ -4,7 +4,8 @@ import {
   FetchTagsFailurePayload,
   FetchTagsRequest,
   FetchTagsSuccess,
-  FetchTagsSuccessPayload
+  FetchTagsSuccessPayload,
+  
 } from "../types/tagTypes";
 
 export const fetchTagsRequest = (): FetchTagsRequest => ({

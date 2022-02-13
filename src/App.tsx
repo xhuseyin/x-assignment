@@ -22,8 +22,6 @@ const App = () => (
       </Col>
       <Col sm={12} md={12} lg={16} xl={12}>
        <Product/>        
-
-       
       </Col>
       <Col sm={12} md={12} lg={24} xl={6}>
         <Basket/>

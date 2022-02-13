@@ -45,7 +45,7 @@ const Header = () => {
       <Container>
           <img src={Logo} alt="" />
         <HeaderTotalPrice>
-          <img src={BasketIcon} alt="" /> {1000}
+          <img src={BasketIcon} alt="" />₺{39.97}
         </HeaderTotalPrice>
       </Container>
     </HeaderLayout>

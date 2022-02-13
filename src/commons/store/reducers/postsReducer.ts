@@ -28,6 +28,26 @@ export default (state = initialState, action: PostsActions) => {
         posts: [],
         error: action.payload.error
       };
+      case postTypes.FILTER_POST_REQUEST:
+        return {
+          ...state,
+          query: action.payload,
+          pending: true
+        };
+      case postTypes.FILTER_POST_SUCCESS:
+        return {
+          ...state,
+          pending: false,
+          posts: action.payload.posts,
+          error: null
+        };
+      case postTypes.FILTER_POST_FAILURE:
+        return {
+          ...state,
+          pending: false,
+          posts: [],
+          error: action.payload.error
+        };      
     default:
       return {
         ...state

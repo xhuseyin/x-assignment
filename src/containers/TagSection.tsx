@@ -8,14 +8,9 @@ import SquareCheckbox from "../components/SquareCheckbox";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchTagsRequest } from "../commons/store/actions/tagActions";
 import { RootState } from "../commons/store/reducers/rootReducer";
+import { filterPostsRequest } from "../commons/store/actions/postsActions";
 
 const Container = styled.div`
-  // margin-top: 12px;
-  // margin-bottom: 24px;
-  // padding: 24px;
-  // width: 100%;
-  // background-color: #ffffff;
-  // border-radius: 2px;
   width: 100%;
   padding: 0 3px;
   max-height: 148px;
@@ -59,6 +54,11 @@ const TagSection = () => {
     dispatch(fetchTagsRequest());
 }, []);
 
+ const handleFilter = (item: string) => {
+   console.log('item:...',item);
+    dispatch(filterPostsRequest(item));
+}; 
+
   return (
     <>
     <SectionTitle title={"Tags"} />
@@ -80,14 +80,15 @@ const TagSection = () => {
                           (item) => item.toUpperCase().indexOf(searchText.toUpperCase()) > -1
                         )
                         .map((item, index) => (
-            <ListItem key={ index }>
+            <ListItem key={ index }
+            onClick={() => handleFilter(item)}>
                 <SquareCheckbox />
                 <span>
                 { item } <span></span>
                 </span>                        
             </ListItem>
-                                                        ))
-                                                        )}
+))
+)}
         </Container>
     </Section>
 </>
