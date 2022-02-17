@@ -1,11 +1,10 @@
-# Getir Front-end Assignment
-This is a front-end development assignment for Getir
+#  React Shopping Cart
 
 WEB_SITE : [https://x-assignment.netlify.app/](https://x-assignment.netlify.app/)
 
 API : [g-market-api](https://github.com/xhuseyin/x-assignment-api)
 
-API_URL : [https://getir-fake-api.herokuapp.com/](https://getir-fake-api.herokuapp.com/)
+<!-- API_URL : [https://getir-fake-api.herokuapp.com/](https://getir-fake-api.herokuapp.com/) -->
 
 ## Folder Structure 
 
@@ -27,13 +26,6 @@ API_URL : [https://getir-fake-api.herokuapp.com/](https://getir-fake-api.herokua
 - TypeScript
 - Styled Components
 - create-react-app
-
-## Useful Links
-- [https://www.youtube.com/watch?v=0W4SdogReDg&t=580s&ab_channel=JackHerrington](https://www.youtube.com/watch?v=0W4SdogReDg&t=580s&ab_channel=JackHerrington)
-- [https://betterprogramming.pub/how-you-should-structure-your-react-applications-e7dd32375a98](https://betterprogramming.pub/how-you-should-structure-your-react-applications-e7dd32375a98)
-- [https://codeburst.io/javascript-array-distinct-5edc93501dc4](https://codeburst.io/javascript-array-distinct-5edc93501dc4)
-- [https://www.stsdevweb.com/reactjs/mastering-practical-features-with-reactjs](https://www.stsdevweb.com/reactjs/mastering-practical-features-with-reactjs)
-- [https://github.com/YoussefZidan/fake-server](https://github.com/YoussefZidan/fake-server)
 
 ## Available Scripts
 
