@@ -25,6 +25,8 @@ box-shadow: 0px 4px 24px rgba(93, 62, 188, 0.04);
 border-radius: 2px;
 padding: 20px 9px;
 margin-top: 16px;
+margin-left: 0 !important;
+margin-right: 0 !important;
 `;
 
 const ProductCard = styled(Col)`
