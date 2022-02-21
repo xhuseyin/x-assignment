@@ -6,6 +6,8 @@ API : [g-market-api](https://github.com/xhuseyin/x-assignment-api)
 
 <!-- API_URL : [https://getir-fake-api.herokuapp.com/](https://getir-fake-api.herokuapp.com/) -->
 
+<!-- Dokümantasyon çok detaylı değil. Folder structure tecrübesine bakılırsa daha iyi olabilirdi ama kötü değil. Styled-component kullanılmış ama uygulama responsive değil. Responsive yapıldığında uygulama render olmakta zorlanıyor gibi. Sorting çalışmıyor. Brand ve Tag kısımlarındaki search çalışmıyor. Basket kısmı çalışmıyor. Pagination yok. Ürün ekleme yok. Container içerisinde styling kullanılmış. UseEffect UseDispatch güncel react özellikleri kullanılmış. Git commitleri tecrübesine göre yeterli değil. Tek branch kullanılmış.Typescript ve redux-saga kullanılmış.  Tecrübesine göre daha proje çok başarılı gelmedi daha iyi olabilirdi. -->
+
 ## Folder Structure 
 
 ├── assets/icons        # SVG files<br>
